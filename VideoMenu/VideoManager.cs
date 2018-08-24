@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 
 namespace VideoMenu
@@ -17,13 +16,12 @@ namespace VideoMenu
 
         public void AddVideo()
         {
-            Console.WriteLine("Adding a video...");
             Console.WriteLine("Enter the title of the video: ");
             string title = Console.ReadLine();
             Console.WriteLine("Select the genre of the video: ");
             Genre genre = SelectGenre();
 
-            int id = videos.Count + 1;
+            int id = videos.Max(v => v.ID) + 1;
 
             Video vid = new Video(title, genre);
             vid.ID = id;
@@ -68,8 +66,6 @@ namespace VideoMenu
                     Console.WriteLine("Video with the specified id does not exist. Please enter a valid id!");
                 }
             }
-
-
         }
 
         internal void ListVideos()
