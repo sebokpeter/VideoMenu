@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VideoMenu.Core.Entity\VideoMenu.Core.Entity.csproj" />
+    <ProjectReference Include="..\VideoMenu.Core\VideoMenu.Core.csproj" />
+  </ItemGroup>
+
 </Project>

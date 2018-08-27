@@ -20,8 +20,10 @@ namespace VideoMenu.Core
 
         public void AddVideo(string title, Genre genre)
         {
-            Video v = new Video(title, genre);
-            v.ID = currentId++;
+            Video v = new Video(title, genre)
+            {
+                ID = this.currentId++
+            };
             videos.Add(v);
         }   
 

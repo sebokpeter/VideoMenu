@@ -2,7 +2,7 @@
 
 namespace VideoMenu.Core.Entity
 {
-    public enum Genre { Action, Adventure}
+    public enum Genre { Action, Adventure, SciFi, Drama}
 
     public class Video
     {

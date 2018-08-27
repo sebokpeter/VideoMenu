@@ -84,14 +84,13 @@ namespace VideoMenu.Controls
                     Console.WriteLine(manager.ListVideos());
                     break;
                 case 6:
-                    Console.WriteLine("Exiting...");
-                    Console.WriteLine("Press any key to exit!");
                     run = false;
                     break;
                 default:
                     Console.WriteLine("Other");
                     break;
             }
+            Console.WriteLine("Press Enter to continue!");
         }
 
         private static void DrawCommands()
