@@ -1,4 +1,4 @@
-﻿using System;
+﻿using VideoMenu.Controls;
 
 namespace VideoMenu
 {

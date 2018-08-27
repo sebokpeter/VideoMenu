@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VideoMenu.Controls\VideoMenu.Controls.csproj" />
+    <ProjectReference Include="..\VideoMenu.Core\VideoMenu.Core.csproj" />
   </ItemGroup>
 
 </Project>

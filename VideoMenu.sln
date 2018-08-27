@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoMenu", "VideoMenu\VideoMenu.csproj", "{417145C8-9B05-4A97-AA98-D66FF9B22352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoMenu", "VideoMenu\VideoMenu.csproj", "{417145C8-9B05-4A97-AA98-D66FF9B22352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoMenu.Core", "VideoMenu.Core\VideoMenu.Core.csproj", "{E2865793-10C7-41D1-BBD1-88D62D58E3AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoMenu.Core.Entity", "VideoMenu.Core.Entity\VideoMenu.Core.Entity.csproj", "{0862A458-EB85-4720-BB87-9ACBD0125699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoMenu.Infrastructure.Data", "VideoMenu.Infrastructure\VideoMenu.Infrastructure.Data.csproj", "{91C4062E-8281-4681-86EF-CB3A2E5FD932}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{262E47D9-ECBA-47E2-86BA-300061DCB4B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoMenu.Controls", "VideoMenu.Controls\VideoMenu.Controls.csproj", "{F1E0F5FB-6B18-47F2-90C1-34B304AABDB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{89160446-9026-4023-8E18-B7BABEE4FD7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EF36B0F0-3D46-4ACC-8E0E-82C456A1095C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,31 @@ Global
 		{417145C8-9B05-4A97-AA98-D66FF9B22352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417145C8-9B05-4A97-AA98-D66FF9B22352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{417145C8-9B05-4A97-AA98-D66FF9B22352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2865793-10C7-41D1-BBD1-88D62D58E3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2865793-10C7-41D1-BBD1-88D62D58E3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2865793-10C7-41D1-BBD1-88D62D58E3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2865793-10C7-41D1-BBD1-88D62D58E3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0862A458-EB85-4720-BB87-9ACBD0125699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0862A458-EB85-4720-BB87-9ACBD0125699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0862A458-EB85-4720-BB87-9ACBD0125699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0862A458-EB85-4720-BB87-9ACBD0125699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C4062E-8281-4681-86EF-CB3A2E5FD932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C4062E-8281-4681-86EF-CB3A2E5FD932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C4062E-8281-4681-86EF-CB3A2E5FD932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C4062E-8281-4681-86EF-CB3A2E5FD932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E0F5FB-6B18-47F2-90C1-34B304AABDB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E0F5FB-6B18-47F2-90C1-34B304AABDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E0F5FB-6B18-47F2-90C1-34B304AABDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E0F5FB-6B18-47F2-90C1-34B304AABDB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2865793-10C7-41D1-BBD1-88D62D58E3AB} = {89160446-9026-4023-8E18-B7BABEE4FD7F}
+		{0862A458-EB85-4720-BB87-9ACBD0125699} = {89160446-9026-4023-8E18-B7BABEE4FD7F}
+		{91C4062E-8281-4681-86EF-CB3A2E5FD932} = {EF36B0F0-3D46-4ACC-8E0E-82C456A1095C}
+		{F1E0F5FB-6B18-47F2-90C1-34B304AABDB9} = {262E47D9-ECBA-47E2-86BA-300061DCB4B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35D98F09-412D-44B9-820B-8EFB30A04B37}
